@@ -1,10 +1,12 @@
+package com.example;
+
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        greet("World");
+    }
 
-        // BAD PRACTICE: hardcoded credentials
-        String password = "123456";
-        String username = "admin";
+    public static void greet(String name) {
+        System.out.println("Hello, " + name + "!");
     }
 }
 
